@@ -11,10 +11,34 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px;
+  margin: 40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+header .usuario {
+  text-align: center;
+}
+
+header .usuario img {
+  border: 2px solid #8a0077;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+header .usuario .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .usuario .iconos .fas {
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 header .caja {
@@ -35,7 +59,7 @@ header .caja .correo {
 .menu {
   position: absolute;
   top: 0;
-  padding-top: 140px;
+  padding-top: 190px;
   width: 100%;
 }
 
@@ -186,8 +210,8 @@ header .caja .correo {
 
 .contenedor {
   margin-top: 50px;
-  color: #fff;
-  background-color: #000035;
+  color: white;
+  background-color: rgba(0, 0, 71, 0.986);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +237,28 @@ header .caja .correo {
 }
 
 .contenedor .redes .iconos .fab:hover {
-  color: navy;
+  cursor: pointer;
+}
+
+.contenedor .redes .iconos .fab:hover.fa-twitter {
+  background: #00acee;
+  border-radius: 5px;
+  text-align: center;
+  width: 62px;
+}
+
+.contenedor .redes .iconos .fab:hover.fa-facebook-f {
+  background: #3b5998;
+  border-radius: 5px;
+  text-align: center;
+  width: 62px;
+}
+
+.contenedor .redes .iconos .fab:hover.fa-instagram {
+  border-radius: 5px;
+  text-align: center;
+  width: 62px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
 
 .contenedor .contacto {
@@ -225,42 +270,8 @@ header .caja .correo {
   margin-bottom: 15px;
 }
 
-.contenedor .correo {
+.contacto-dos {
   margin: 30px 0 30px 0;
   text-align: center;
-}
-
-.contenedor .correo .datos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.contenedor .correo .datos h4 {
-  margin-top: 5px;
-}
-
-.contenedor .correo .datos input {
-  text-align: center;
-  border-radius: 10px;
-  border: none;
-  width: 50%;
-  margin: auto;
-  height: 30px;
-}
-
-.contenedor .correo .datos .boton-enviar {
-  margin-top: 10px;
-  font-family: "Varela Round", sans-serif;
-  cursor: pointer;
-}
-
-.contenedor .correo .datos .boton-enviar:hover {
-  background-color: navy;
-  color: white;
 }
 /*# sourceMappingURL=style.css.map */

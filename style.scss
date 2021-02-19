@@ -9,8 +9,25 @@
 
 header {
   display: flex;
-  margin: 50px;
+  margin: 40px;
   justify-content: space-between;
+  .usuario {
+    text-align: center;
+    img {
+      border: 2px solid rgb(138, 0, 119);
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+    }
+    .iconos {
+      display: flex;
+      justify-content: space-around;
+      .fas {
+        margin-top: 5px;
+        font-size: 20px;
+      }
+    }
+  }
   .caja {
     display: flex;
 
@@ -26,7 +43,7 @@ header {
 .menu {
   position: absolute;
   top: 0;
-  padding-top: 140px;
+  padding-top: 190px;
   width: 100%;
 
   ul {
@@ -138,8 +155,8 @@ header {
 }
 .contenedor {
   margin-top: 50px;
-  color: #fff;
-  background-color: rgb(0, 0, 53);
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 71, 0.986);
   display: flex;
   justify-content: space-around;
   .redes {
@@ -152,7 +169,32 @@ header {
         font-size: 60px;
 
         &:hover {
-          color: navy;
+          cursor: pointer;
+        }
+        &:hover.fa-twitter {
+          background: #00acee;
+          border-radius: 5px;
+          text-align: center;
+          width: 62px;
+        }
+        &:hover.fa-facebook-f {
+          background: #3b5998;
+          border-radius: 5px;
+          text-align: center;
+          width: 62px;
+        }
+        &:hover.fa-instagram {
+          border-radius: 5px;
+          text-align: center;
+          width: 62px;
+          background: radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%
+          );
         }
       }
     }
@@ -161,37 +203,11 @@ header {
     margin: 30px 0 30px 0;
   }
   p {
-    margin-top:15px;
+    margin-top: 15px;
     margin-bottom: 15px;
   }
-  .correo {
-    margin: 30px 0 30px 0;
-    text-align: center;
-    .datos {
-      h4 {
-        margin-top: 5px;
-      }
-      display: flex;
-      flex-direction: column;
-      input {
-        text-align: center;
-        border-radius: 10px;
-        border: none;
-        width: 50%;
-        margin: auto;
-        height: 30px;
-      }
-      .boton-enviar {
-        margin-top: 10px;
-        font-family: "Varela Round", sans-serif;
-        cursor: pointer;
-
-        &:hover {
-          background-color: navy;
-          color: white;
-        }
-      }
-      
-    }
-  }
+}
+.contacto-dos {
+  margin: 30px 0 30px 0;
+  text-align: center;
 }
