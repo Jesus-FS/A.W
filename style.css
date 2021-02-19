@@ -7,6 +7,30 @@
   font-family: "Varela Round", sans-serif;
 }
 
+body .fa-whatsapp-square {
+  color: #128c7e;
+  bottom: 0;
+  font-size: 60px;
+  position: fixed;
+  margin-left: 10px;
+}
+
+body .fa-telegram {
+  color: #0088cc;
+  bottom: 70px;
+  font-size: 60px;
+  position: fixed;
+  margin-left: 10px;
+}
+
+body .fa-facebook-messenger {
+  color: #0078FF;
+  bottom: 140px;
+  font-size: 60px;
+  position: fixed;
+  margin-left: 10px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
