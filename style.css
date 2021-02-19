@@ -35,7 +35,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 40px;
+  margin: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -83,8 +83,9 @@ header .caja .correo {
 .menu {
   position: absolute;
   top: 0;
-  padding-top: 190px;
+  padding-top: 170px;
   width: 100%;
+  z-index: 100;
 }
 
 .menu ul {
@@ -96,7 +97,7 @@ header .caja .correo {
   border-radius: 10px;
   margin: 0 50px 0 50px;
   height: 50px;
-  background-color: rgba(0, 0, 104, 0.986);
+  background-color: #000068;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -142,6 +143,10 @@ header .caja .correo {
   border-radius: 10px;
   width: 30%;
   height: 50px;
+}
+
+.texto-portada input:hover {
+  cursor: pointer;
 }
 
 .seccion-uno {
